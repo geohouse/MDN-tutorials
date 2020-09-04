@@ -1,0 +1,14 @@
+html {
+  background-color: orchid;
+  font-size: 20px;
+}
+
+ul {
+  background: yellowgreen;
+  padding: 10px;
+  border: 10px solid darkred;
+}
+
+li {
+  margin-left: 20px;
+}
