@@ -1,0 +1,24 @@
+html {
+  font-family: sans-serif;
+}
+
+/* Your CSS below here */
+
+p{
+    display:inline-block;
+    width: 200px;
+    height: 2.25rem;
+    /* Getting font size of 18pt assuming the root font size is 16pt. */
+    font-size: 1.125rem;
+    /* Making the line height the same as the total height centers the text in the paragraph */
+    line-height: 2.25rem;
+    color: orange;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    border: solid 1px orangered;
+    border-radius: 2px;
+    background: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(0,0,0,0.2) 30%, rgba(0,0,0,0.2)), orange;
+    box-shadow: 1px 1px 1px black, inset 1px 1px white, inset -1px -1px black;
+    
+
+}
