@@ -66,6 +66,12 @@ class Ball {
         const distance = Math.sqrt(dx * dx + dy * dy);
         if (distance < this.size + ball.size) {
           ball.color = this.color = randomRGB();
+          // These make the balls 'bounce' off each other in addition to changing
+          // color when they collide.
+          this.velY = -1 * this.velY;
+          this.velX = -1 * this.velX;
+          ball.velY = -1 * ball.velY;
+          ball.velX = -1 * ball.velX;
         }
       }
     }
@@ -74,7 +80,7 @@ class Ball {
 
 const balls = [];
 
-while (balls.length < 300) {
+while (balls.length < 50) {
   const size = random(10, 20);
   const ball = new Ball(
     // always draw at least 1 ball width from edge to prevent
